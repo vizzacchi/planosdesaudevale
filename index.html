@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Planos de Saúde Vale do Paraíba</title>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav class="navegacao">
+            <img src="./img/logoAstroSaude.png" alt="Logo Astro Saúde" title="Astro Saúde"
+                class="img-fluid navegacao__logo">
+            <h1>Planos de Saúde Vale do Paraíba <br><span class="navegacao__slogan"> O maior portal de 
+                planos de saúde de toda região! </span></h1>
+            <i class="bi bi-person-fill navegacao__slogan"></i>
+        </nav>
+    </header>
+    <div class="pesquisas ">
+        <div class="row">
+            <label for="cboCidade">Filtre por:</label>
+            <select name="cboCidade" id="cboCidade" class="pesquisas__cbo form-select-sm col">
+                <option value="1">Cidade...</option>
+                <option value="2">Jacareí</option>
+                <option value="3">São José dos Campos</option>
+                <option value="4">Taubaté</option>
+                <option value="5">Guaratinguetá</option>
+                <option value="6">Caraguatatuba</option>
+            </select>
+            <select name="cboOperadoras" id="cboOperadoras" name="cboOperadoras"
+                class="pesquisas__cbo form-select-sm col">
+                <option value="0">Operadora...</option>
+                <option value="1">Assistência Médica Internacional</option>
+                <option value="2">Ativia Saúde</option>
+                <option value="3">Bradesco Saúde</option>
+                <option value="4">Hapvida</option>
+                <option value="5">Porto Seguro Saúde</option>
+                <option value="6">Plano Santa Casa Saúde</option>
+                <option value="7">Sulamérica Saúde</option>
+                <option value="8">Unimed Guaratinguetá</option>
+                <option value="9">Unimed São José dos Campos</option>
+                <option value="10">Unimed Taubaté</option>
+                <option value="11">Unimed Guarulhos</option>
+                <option value="12">Grupo Notredame Intermédica</option>
+            </select>
+        </div>
+    </div>
+    <div class="hero d-flex">
+        <div class="hero__btns col-6 col-md-4 col-lg-3">
+            <a class="hero__btn">Simulação Online</a>
+            <a class="hero__btn">Contrate Online</a>
+        </div>
+        <div class="hero__slogan col-6 col-md-8 col-lg-9">
+            <h2 class="slogan">Seja o astro da sua vida.</h2>
+            <p class="slogan slogan__text">Escolha seu plano de saúde!</p>
+        </div>
+    </div>
+    <img src="./img/wave.svg" alt="Ondas da Astro Saúde" class="wave">
+    <section class="destaque d-flex align-items-center">
+        <div class="destaque__img">
+            <img src="./img/celebrandoVida.svg" alt="Menina com os braços para cima celebrando a vida!"
+                title="Menina Celebrando a vida" class="destaque__menina img-fluid">
+        </div>
+        <div class="destaque__mapa">
+            <h2 class="destaque__title">Os melhores <br>planos do<br> Vale do Paraíba</h2>
+        </div>
+    </section>
+
+    <!-- Operadoras----------------------------------- -->
+    <section class="row operadoras">
+        <h2 class="operadoras__title m-3">Planos de Saúde Vale do Paraíba</h2>
+        <div class="row_cards row__operadora" id="container__operadoras">
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoAmil.webp" class="card__img__top img-fluid"
+                        alt="Logo Amil Assistência Médica Internacional" title="Amil Assistência Médica Internacional">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Nacional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 2 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoAtivia.webp" class="card__img__top img-fluid" alt="Logo Ativia Saúde"
+                        title="Ativia Saúde">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura regional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 1 vida</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoBradescoSaude.webp" class="card__img__top img-fluid"
+                        alt="Logo Bradesco Saúde" title="Bradesco Saúde">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Nacional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 3 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoHapvida.webp" class="card__img__top img-fluid" alt="Logo Hapvida"
+                        title="Hapvida">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura em Jacareí e São José dos Campos</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 2 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoSaoCamilo.webp" class="card__img__top img-fluid"
+                        alt="Logo São Camilo" title="São Camilo">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Sem informações</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoPoliclin.webp" class="card__img__top img-fluid" alt="Logo Policlin"
+                        title="Policlin">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Sem informações</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/LogoPortoSeguro.webp" class="card__img__top img-fluid"
+                        alt="Logo Porto Seguro Saúde" title="Porto Seguro Saúde">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Nacional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 3 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoPlanoSantaCasa.webp" class="card__img__top img-fluid"
+                        alt="Logo Plano Santa Casa Saúde" title="Plano Santa Casa Saúde">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Regional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 1 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoSantaCasaLorena.webp" class="card__img__top img-fluid"
+                        alt="Logo Santa Casa Lorena" title="Santa Casa de Lorena">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Sem informações</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoSaoFrancisco.webp" class="card__img__top img-fluid"
+                        alt="Logo São Francisco Vida" title="São Francisco Vida">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Sem informações</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoSulamerica.webp" class="card__img__top img-fluid"
+                        alt="Logo Sulamérica Saúde" title="Sulamérica Saúde">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Nacional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 2 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoUnimedCacapava.webp" class="card__img__top img-fluid"
+                        alt="Logo Unimed Caçapava" title="Unimed Caçapava">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Sem informações</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoUnimedGuaratingueta.webp" class="card__img__top img-fluid"
+                        alt="Logo Unimed Guaratinguetá" title="Unimed Guaratinguetá">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Regional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 3 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoUnimedLorena.webp" class="card__img__top img-fluid"
+                        alt="Logo Unimed Lorena" title="Unimed Lorena">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Sem informações</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoUnimedPindamonhangaba.webp" class="card__img__top img-fluid"
+                        alt="Logo Unimed Pindamonhangaba" title="Unimed Pindamonhangaba">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Sem informações</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoUnimedSaoJosedosCampos.webp" class="card__img__top img-fluid"
+                        alt="Logo Unimed São José dos Campos" title="Unimed São José dos Campos">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Regional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 1 vida</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoUnimedTaubate.webp" class="card__img__top img-fluid"
+                        alt="Logo Unimed Taubaté" title="Unimed Taubaté">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Regional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 2 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 operadora ---------------------------->
+            <div class="card card__operadora">
+                <a href="#">
+                    <img src="./img/operadoras/logoUnimedGuarulhos.webp" class="card__img__top img-fluid"
+                        alt="Logo Unimed Guarulhos" title="Unimed Guarulhos">
+                </a>
+                <ul class="card__caracteristica">
+                    <li>Cobertura Regional</li>
+                    <li>Planos Individuais</li>
+                    <li>Planos Empresariais a partir de 3 vidas</li>
+                </ul>
+                <a href="">
+                    <h4 class="card__saibaMais">Saiba mais...</h4>
+                </a>
+            </div>
+        </div>
+        <!-- Fim Operadoras--------------------------------- -->
+    </section>
+    <div class="scroll__customizado d-flex justify-content-around mx-1">
+        <a href="#" onclick=left_fim()><i class="bi bi-chevron-double-left"></i></a>
+        <a href="#" onclick=left()><i class="bi bi-chevron-compact-left"></i></a>
+        <p class="display-6">Navegue pelas operadoras</p>
+        <a href="#" onclick=right()><i class="bi bi-chevron-compact-right"></i></a>
+        <a href="#" onclick=right_fim()><i class="bi bi-chevron-double-right"></i></a>
+    </div>
+    <section class="botoes container">
+        <a href="" class="btn__botoes d-flex align-items-center justify-content-center"><i
+                class="bi bi-file-earmark-text px-2 btn__img"></i>Contrate<br>Online</a>
+        <a href="" class="btn__botoes d-flex align-items-center justify-content-center"><i
+                 class="bi bi-calculator px-2 btn__img"></i>Simulação<br>Online</a>
+        <a href="" class="btn__botoes d-flex align-items-center justify-content-center"><i
+                class="bi bi-whatsapp px-2 btn__img"></i>Converse<br>WhatsApp</a>
+    </section>
+
+    <!-- Hospitais----------------------------------- -->
+    <section class="row operadoras">
+        <h2 class="hospitais__title m-3">Hospitais do Vale do Paraíba</h2>
+        <div class="row_cards" id="container__hospitais">
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalChui.webp" class="card__img__top img-fluid"
+                        alt="Fachada Hospital Psiquiatria Chuí"
+                        title="Associação Instituto Chuí de Psiquiatria São José dos Campos">
+                </a>
+                <h5>Associação Instituto Chuí</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Pr. Bom Jesus do Serimbura, 82 - Jardim Maringa, São José dos
+                        Campos - SP, 12243-370</p>
+                    <p><strong>Telefone:</strong> (12) 3921-6786</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalCepog.webp" class="card__img__top img-fluid" alt="Hospital CEPOG"
+                        title="Hospital Cepog Guaratinguetá">
+                </a>
+                <h5>CEPOG</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Benedito Marcondes, 125 Guaratinguetá, SP, 12505-270</p>
+                    <p><strong>Telefone:</strong> (12) 3128-5511</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/clinifor.webp" class="card__img__top img-fluid"
+                        alt="Clinifor Clínica de Fraturas e Ortopedia" title="Clinifor Clínica de Fraturas e Ortopedia">
+                </a>
+                <h5>Clinifor Clínica de Fraturas e Ortopedia</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Antônio Afonso, 138 Centro, Jacareí - SP, 12327-270</p>
+                    <p><strong>Telefone:</strong> (12) 3953-1099</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/cvvFranciscaJulia.webp" class="card__img__top img-fluid"
+                        alt="CVV Francisca Júlia" title="CVV Francisca Júlia São José dos Campos">
+                </a>
+                <h5>CVV Francisca Júlia</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Estr. Dr. Bezerra de Menezes, 700 - Jardim Torrao de Ouro, São José
+                        dos Campos - SP, 12229-380</p>
+                    <p><strong>Telefone:</strong> (12) 3944-9090 </p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalDaVinci.webp" class="card__img__top img-fluid" alt="Hospital Da Vinci"
+                        title="Hospital Da Vinci De Guaratinguetá">
+                </a>
+                <h5>Da Vince</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Juscelino Kubitschek, 1301, Terreo/Mezanino, Vila Alves
+                        Guaratinguetá - SP, 12505-300</p>
+                    <p><strong>Telefone:</strong> (12) 3042-2022</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/Fusam.webp" class="card__img__top img-fluid" alt="Hospital Fusam Caçapava"
+                        title="Hospital Fusam Caçapava">
+                </a>
+                <h5>Fusan Fundação de Saúde e Assistência</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Dr. Pereira de Mattos, 63 - Centro, Caçapava - SP, 12281-450</p>
+                    <p><strong>Telefone:</strong> (12) 3654-8800</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/gacc.webp" class="card__img__top img-fluid"
+                        alt="GACC Grupo de Assistência à Criança com Câncer" title="GACC Grupo de Assistência à Criança
+                        com Câncer São José dos Campos">
+                </a>
+                <h5>GACC - Grupo de Assistência à Criança Com Câncer</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Possidônio José de Freitas, 1200 - Urbanova, São José dos Campos -
+                        SP, 12244-010</p>
+                    <p><strong>Telefone:</strong> 12 3949-6020</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalUniversitarioTaubate.webp" class="card__img__top img-fluid"
+                        alt="Hospital Universitário de Taubaté" title="Hospital Universitário de Taubaté">
+                </a>
+                <h5>H.MUT Hospital Universitário</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Granadeiro Guimarães, 270 - Centro, Taubaté - SP, 12020-130</p>
+                    <p><strong>Telefone:</strong> (12) 3625-7576</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hosp10deJulho.webp" class="card__img__top img-fluid"
+                        alt="Hospital 10 de Julho Guaratinguetá" title="Hospital 10 de julho Guaratinguetá">
+                </a>
+                <h5>Hospital 10 de Julho</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Aristídes Joaquim de Oliveira, 115 Pindamonhangaba, SP
+                    </p>
+                    <p><strong>Telefone:</strong> (12) 3644-3400</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalAlvorada.webp" class="card__img__top img-fluid"
+                        alt="Hospital Alvorada Jacareí" title="Hospital Alvorada Jacareí">
+                </a>
+                <h5>Hospital Alvorada</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço: </strong>R. Minas Gerais, 180 - Vila Pinheiro, Jacareí – SP, 12307-060</p>
+                    <p><strong>Telefone:</strong> (12) 3955-3444</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalAntonioAfonso.webp" class="card__img__top img-fluid"
+                        alt="Hospital Antonio Afonso Jacareí" title="Hospital Antonio afonso Jacareí">
+                </a>
+                <h5>Hospital Antonio Afonso</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Antônio Afonso, 307 - Centro, Jacareí - SP, 12327-270</p>
+                    <p><strong>Telefone:</strong> (12) 3955-9900</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalPoliclinCacapava.webp" class="card__img__top img-fluid"
+                        alt="Hospital Policlin Caçapava" title="Hospital Policlin Caçapava">
+                </a>
+                <h5>Hospital e Maternidade Policlin Caçapava</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Cel. João Dias Guimarães, 266 - Centro, Caçapava - SP, 12281-350
+                    </p>
+                    <p><strong>Telefone:</strong> (12) 3221-1000</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalPoliclinJacarei.webp" class="card__img__top img-fluid"
+                        alt="Hospital Policlin Jacareí" title="Hospital Policlin Jacareí">
+                </a>
+                <h5>Hospital e Maternidade Policlin Jacareí</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Eduard Six, 80 - Jardim Paraiba, Jacareí - SP, 12327-673</p>
+                    <p><strong>Telefone:</strong> (12) 3954-8800</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalPoliclinSJC.webp" class="card__img__top img-fluid"
+                        alt="Hospital Policlin São José dos Campos" title="Hospital Policlin São José dos Campos">
+                </a>
+                <h5>Hospital e Maternidade Policlin SJCampos</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Nove de Julho, 430 - Vila Ady'Anna, São José dos Campos - SP,
+                        12243-001</p>
+                    <p><strong>Telefone:</strong> (12) 3797-9800</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalRegionalTaubate.webp" class="card__img__top img-fluid"
+                        alt="Hospital Policlin Taubaté" title="Hospital Policlin Taubaté">
+                </a>
+                <h5>Hospital e Maternidade Policlin Taubaté</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Prof. Luiz Augusto da Silva, 87 - Centro, Taubaté - SP, 12020-360
+                    </p>
+                    <p><strong>Telefone:</strong> (12) 2125-0333</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalFreiGalvao.webp" class="card__img__top img-fluid"
+                        alt="Hospital Frei Galvão" title="Hospital Frei Galvão Guaratinguetá">
+                </a>
+                <h5>Hospital Frei Galvão</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Gastão Meireles, 26 Vila Santa Rita, Guaratinguetá, SP </p>
+                    <p><strong>Telefone:</strong> (12) 3128-3800</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalAntoninhodaRochaMarmo.webp" class="card__img__top img-fluid"
+                        alt="Hospital Antoninho da Rocha Marmo São José dos Campos"
+                        title="Hospital Antoninho da Rocha Marmo São José dos Campos">
+                </a>
+                <h5>Hospital Materno Infantil Antoninho da Rocha Marmo</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Heitor Villa Lobos, 1961 - Jardim Renata, São José dos Campos – SP
+                    </p>
+                    <p><strong>Telefone:</strong> (12) 3797-0777</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalOrto.webp" class="card__img__top img-fluid" alt="Hospital Orto"
+                        title="Hospital Orto São José dos Campos">
+                </a>
+                <h5>Hospital Orto</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Nove de Julho, 1017 - Jd. Apolo - São José dos Campos – SP</p>
+                    <p><strong>Telefone:</strong> (12) 3946-4966</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalPioXii.webp" class="card__img__top img-fluid" alt="Hospital PIO XII"
+                        title="Hospital PIO XII São José dos Campos">
+                </a>
+                <h5>Hospital Pio XII</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Paraguassú, 51 Santana, São José dos Campos - SP, 12212-110</p>
+                    <p><strong>Telefone:</strong> (12) 3928-3300</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 Hospital ---------------------------->
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalProntil.webp" class="card__img__top img-fluid" alt="Hospital Prontil"
+                        title="Hospital Prontil São José dos Campos">
+                </a>
+                <h5>Hospital Prontil</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Eng. Francisco José Longo, 1265 -
+                        Jardim Sao Dimas, São José dos Campos</p>
+                    <p><strong>Telefone:</strong> (12) 3945-4402 </p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalRegionalTaubate.webp" class="card__img__top img-fluid"
+                        alt="Hospital Regional Taubaté" title="Hospital Regional Taubaté">
+                </a>
+                <h5>Hospital Regional do Vale do Paraíba</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Avenida Tiradentes, 280 Jardim das Nações – Taubaté/SP, 12030-180</p>
+                    <p><strong>Telefone:</strong> (12) 3634-2000</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalSantosDumontJacarei.webp" class="card__img__top img-fluid"
+                        alt="Hospital Santos Dumont Jacareí" title="Hospital Santos Dumont Jacareí">
+                </a>
+                <h5>Hospital Santos Dumont Jacareí</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Dr Lucio Malta, 693, Centro - Sala 01 A 08 Jacareí/SP - CEP
+                        12327-000</p>
+                    <p><strong>Telefone:</strong> (12) 2139-4000</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalSantosDumont.webp" class="card__img__top img-fluid"
+                        alt="Hospital Santos Dumont São José dos Campos"
+                        title="Hospital Santos Dumont São José dos Campos">
+                </a>
+                <h5>Hospital Santos Dumont São José dos Campos</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Tívoli, 336 - Vila Betania, São José dos Campos - SP, 12245-481
+                    </p>
+                    <p><strong>Telefone:</strong> (12) 3878-1500</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalSaoFranciscoJacarei.webp" class="card__img__top img-fluid"
+                        alt="Hospital São Francisco de Assis" title="Hospital São Francisco de Assis Jacareí">
+                </a>
+                <h5>Hospital São Francisco de Assis</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Ernesto Duarte, 70 Pq. Califórnia
+                        Jacareí - São Paulo - 12311-200</p>
+                    <p><strong>Telefone:</strong> (12) 3954 – 2400</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalSaoJose.webp" class="card__img__top img-fluid"
+                        alt="Hospital Maternidade São José" title="Hospital Maternidade São José São José dos Campos">
+                </a>
+                <h5>Hospital São José</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Heitor Villa Lobos, 2071 - Vila Ema, São José dos Campos - SP,
+                        12245-280</p>
+                    <p><strong>Telefone:</strong> (12) 3924-2000</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalUbarana.webp" class="card__img__top img-fluid"
+                        alt="Hospital Ubarana - Medicina Integrada"
+                        title="Hospital Ubarana - Medicina Integrada Taubaté">
+                </a>
+                <h5>Hospital Ubarana - Medicina Integrada</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Granadeiro Guimarães, 99, Centro, Taubaté 12020-130</p>
+                    <p><strong>Telefone:</strong> (12) 3632-0022</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalUnimedCacapava.webp" class="card__img__top img-fluid"
+                        alt="Hospital Unimed Caçapava" title="Hospital Unimed Caçapava">
+                </a>
+                <h5>Hospital Unimed Caçapava</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rod. João Amaral Gurgel, 1225 - Km 1 - Parque Res. Maria Elmira,
+                        Caçapava - SP, 12285-020</p>
+                    <p><strong>Telefone:</strong> (12) 3221-8800 </p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalUnimedLorena.webp" class="card__img__top img-fluid"
+                        alt="Hospital Unimed de Lorena" title="Hospital Unimed de Lorena">
+                </a>
+                <h5>Hospital Unimed de Lorena</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Lulu Meyer 345, Lorena, SP, 12606-110</p>
+                    <p><strong>Telefone:</strong> (12) 3159-2111</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalValeparaibanoCirurgias.webp" class="card__img__top img-fluid"
+                        alt="Hospital Vale Paraibano de Cirurgias" title="Hospital Vale Paraibano de Cirurgias Taubaté">
+                </a>
+                <h5>Hospital Vale Paraibano de Cirurgias</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Mal. Artur da Costa e Silva, 559 - Taubaté - SP, 12010-490</p>
+                    <p><strong>Telefone:</strong> (12) 3624-4458</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalVivalle.webp" class="card__img__top img-fluid" alt="Hospital Vivalle"
+                        title="Hospital Vivalle São José dos Campos">
+                </a>
+                <h5>Hospital Vivalle</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Linneu de Moura, 995 - Urbanova, São José dos Campos - SP,
+                        12244-380</p>
+                    <p><strong>Telefone:</strong> (12) 3924-4900</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalSaoLucas.webp" class="card__img__top img-fluid"
+                        alt="Novo Hospital São Lucas" title="Novo Hospital São Lucas Taubaté">
+                </a>
+                <h5>Novo Hospital São Lucas</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Charles Schnneider, 2301 - Jardim das Industrias, Taubaté - SP,
+                        12040-170</p>
+                    <p><strong>Telefone:</strong> (12) 2125-9100</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/orthoservice.webp" class="card__img__top img-fluid" alt="Orthoservice"
+                        title="Orthoservice São José dos Campos">
+                </a>
+                <h5>Orthoservice</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Heitor Villa Lobos, 2071 - Vila Ema, São José dos Campos - SP,
+                        12245-280</p>
+                    <p><strong>Telefone:</strong> (12) 3924-2000</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/ortoclinica.webp" class="card__img__top img-fluid"
+                        alt="Ortoclinica Jacareí" title="Ortoclinica Jacareí">
+                </a>
+                <h5>Ortoclinica Jacareí</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Prudente de Morais, 39 - Centro, Jacareí - SP, 12308-020</p>
+                    <p><strong>Telefone:</strong> (12) 3961-8117</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalProInfancia.webp" class="card__img__top img-fluid"
+                        alt="Pro Infância Hospital e Pronto Socorro Pediatrico"
+                        title="Pro Infância Hospital e Pronto Socorro Pediatrico São José dos Campos">
+                </a>
+                <h5>Pro Infância Hospital e Pronto Socorro Pediatrico</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Eng. Francisco José Longo, 862 - Jardim Sao Dimas, São José dos
+                        Campos - SP, 12245-001</p>
+                    <p><strong>Telefone:</strong> (12) 3946-7866</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalUnimedTaubate.webp" class="card__img__top img-fluid"
+                        alt="Pronto Atendimento Hospital Unimed Taubaté"
+                        title="Pronto Atendimento Hospital Unimed Taubaté">
+                </a>
+                <h5>Pronto Atendimento Hospital Unimed Taubaté</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Charles Schnneider, 2301 - Senhor do Bonfim, Taubaté - SP,
+                        12040-001</p>
+                    <p><strong>Telefone:</strong></p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/pronval.webp" class="card__img__top img-fluid" alt="Pronval"
+                        title="Pronval São José dos Campos">
+                </a>
+                <h5>Pronval</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Praça Dr. Maurício Anisse Cury, 80 - Centro, São José dos Campos - SP,
+                        12210-120</p>
+                    <p><strong>Telefone:</strong> (12) 3878-0555</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/santacasaguaratingueta.webp" class="card__img__top img-fluid"
+                        alt="Hospital Santa Casa de Guaratinguetá" title="Hospital Santa Casa de Guaratinguetá">
+                </a>
+                <h5>Santa Casa de Guaratinguetá</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Rangel Pestana 194, Guaratinguetá, SP, 12501</p>
+                    <p><strong>Telefone:</strong> (12) 2131-1900</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/santaCasaJacarei.webp" class="card__img__top img-fluid"
+                        alt="Santa Casa de Jacareí" title="Santa Casa de Jacareí">
+                </a>
+                <h5>Santa Casa de Jacareí</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Antônio Afonso, 119 - Centro, Jacareí - SP, 12327-270</p>
+                    <p><strong>Telefone:</strong> (12) 3954-5600</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/santacasadelorena.webp" class="card__img__top img-fluid"
+                        alt="Santa Casa de Lorena" title="Santa Casa de Lorena">
+                </a>
+                <h5>Santa Casa de Lorena</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Dom Bosco 562, Lorena, SP, 12600-100</p>
+                    <p><strong>Telefone:</strong> (12) 3159-3344</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/santacasapinda.webp" class="card__img__top img-fluid"
+                        alt="Santa Casa de Pindamonhangaba" title="Santa Casa de Pindamonhangaba">
+                </a>
+                <h5>Santa Casa de Pindamonhangaba</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Maj. José dos Santos Moreira 466, Pindamonhangaba, SP, 12410-050
+                    </p>
+                    <p><strong>Telefone:</strong> (12) 3643-2644</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/santacasasjc.webp" class="card__img__top img-fluid"
+                        alt="Santa Casa de São José dos Campos" title="Santa Casa de São José dos Campos">
+                </a>
+                <h5>Santa Casa de São José dos Campos</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Dolzani Ricardo, 620 - Centro, São José dos Campos - SP, 12210-110
+                    </p>
+                    <p><strong>Telefone:</strong> (12) 3876-1999</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalSantosSumontProntoAtendimento.webp" class="card__img__top img-fluid"
+                        alt="Santos Dumont Pronto Atendimento"
+                        title="Santos Dumont Pronto Atendimento São José dos Campos">
+                </a>
+                <h5>Santos Dumont Pronto Atendimento</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Dr Lucio Malta, 693, Centro - Sala 01 A 08 Jacareí/SP - CEP
+                        12327-000</p>
+                    <p><strong>Telefone:</strong> (12) 2139-4000</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <div class="card card__hospital">
+                <a href="#">
+                    <img src="./img/hospitais/hospitalAttentis.webp" class="card__img__top img-fluid" alt="Unidade Attentis"
+                        title="Unidade Attentis Jacareí">
+                </a>
+                <h5>Unidade Attentis</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. das Letras, 1276 - Vila Branca, Jacareí - SP, 12301-330</p>
+                    <p><strong>Telefone:</strong> (12) 3925-1000</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+        </div>
+        <!-- Fim Hospitais--------------------------------- -->
+
+    </section>
+    <div class="scroll__customizado d-flex justify-content-around mx-1">
+        <a href="#" onclick=left_fim_hosp()><i class="bi bi-chevron-double-left"></i></a>
+        <a href="#" onclick=left_hosp()><i class="bi bi-chevron-compact-left"></i></a>
+        <p class="display-6">Navegue pelos hospitais</p>
+        <a href="#" onclick=right_hosp()><i class="bi bi-chevron-compact-right"></i></a>
+        <a href="#" onclick=right_fim_hosp()><i class="bi bi-chevron-double-right"></i></a>
+    </div>
+    <!-- Laboratórios----------------------------------- -->
+    <section class="row operadoras">
+        <h2 class="laboratorios__title m-3">Laboratórios do Vale do Paraíba</h2>
+        <div class="row_cards" id="container__laboratorios">
+            <!-- CARD 1 laboratorio ---------------------------->
+            <div class="card card__laboratorio">
+                <a href="#">
+                    <img src="./img/laboratorios/maisNove.webp" class="card__img__top img-fluid img-fluid"
+                        alt="Mais Nove Medicina Diagnóstica" title="Mais Nove Medicina Diagnóstica">
+                </a>
+                <h5>+ Nove Medicina Diagnóstica</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Nove de Julho 415, Taubaté, SP, 12020-000</p>
+                    <p><strong>Telefone:</strong> (12) 3625-2000</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 laboratorio ---------------------------->
+            <div class="card card__laboratorio">
+                <a href="#">
+                    <img src="./img/laboratorios/acta.webp" class="card__img__top img-fluid img-fluid"
+                        alt="Acta Medicina Diagnostica" title="Acta Medicina Diagnostica">
+                </a>
+                <h5>Acta Medicina Diagnostica</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. Inglaterra, 150 - Jardim das Nações, Taubaté - SP, 12030-450</p>
+                    <p><strong>Telefone:</strong> (12) 3413-2282</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 laboratorio ---------------------------->
+            <div class="card card__laboratorio">
+                <a href="#">
+                    <img src="./img/laboratorios/autenticamedicinadiagnostica.webp"
+                        class="card__img__top img-fluid img-fluid"
+                        alt="Autêntica Medicina Diagnóstica - Ultrassonografia" title="Autêntica Medicina Diagnóstica -
+                        Ultrassonografia">
+                </a>
+                <h5>Autêntica Medicina Diagnóstica - Ultrassonografia</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Rua Armando de Oliveira Cobra, 50, sala 616, 6° andar - Jardim
+                        Aquarius, São José dos Campos - SP, 12246-002</p>
+                    <p><strong>Telefone:</strong> (12) 3307-5653</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 laboratorio ---------------------------->
+            <div class="card card__laboratorio">
+                <a href="#">
+                    <img src="./img/laboratorios/basi.webp" class="card__img__top img-fluid img-fluid"
+                        alt="R. Dr. Souza Alves, 269 - Centro, Taubaté - SP, 12020-030"
+                        title="Mais Nove Medicina Diagnóstica">
+                </a>
+                <h5>Basi</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Dr. Souza Alves, 269 - Centro, Taubaté - SP, 12020-030</p>
+                    <p><strong>Telefone:</strong> (12) 3632-7481</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 laboratorio ---------------------------->
+            <div class="card card__laboratorio">
+                <a href="#">
+                    <img src="./img/laboratorios/labcarloschagas.webp" class="card__img__top img-fluid img-fluid"
+                        alt="Carlos Chagas Laboratório" title="Carlos Chagas Laboratório">
+                </a>
+                <h5>Carlos Chagas Laboratório</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> R. Jacques Felix, 294 - Centro, Taubaté - SP, 12020-060</p>
+                    <p><strong>Telefone:</strong> (12) 3632-1844</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+            <!-- CARD 1 laboratorio---------------------------->
+            <div class="card card__laboratorio">
+                <a href="#">
+                    <img src="./img/laboratorios/cda.webp" class="card__img__top img-fluid img-fluid"
+                        alt="CDA - Centro Diagnóstico Andrade" title="CDA - Centro Diagnóstico Andrade">
+                </a>
+                <h5>+ Nove Medicina Diagnóstica</h5>
+                <div class="card_endereco">
+                    <p><strong>Endereço:</strong> Av. São João, 1644 - Jardim Esplanada, São José dos Campos - SP,
+                        12242-000</p>
+                    <p><strong>Telefone:</strong> (12) 3931-4068</p>
+                </div>
+                <a href="">
+                    <h4 class="card__maisInformacoes">Mais Informações...</h4>
+                </a>
+            </div>
+        </div>
+        <!-- Fim Laboratórios--------------------------------- -->
+    </section>
+    <div class="scroll__customizado d-flex justify-content-around mx-1 mb-5">
+        <a href="#" onclick=left_fim_lab()><i class="bi bi-chevron-double-left"></i></a>
+        <a href="#" onclick=left_lab()><i class="bi bi-chevron-compact-left"></i></a>
+        <p class="display-6">Navegue pelos Laboratórios</p>
+        <a href="#" onclick=right_lab()><i class="bi bi-chevron-compact-right"></i></a>
+        <a href="#" onclick=right_fim_labp()><i class="bi bi-chevron-double-right"></i></a>
+    </div>
+    <section class="noticias container">
+        <div class="noticias__conteudo row">
+            <h2 class="noticias__title">Últimas Notícias- Planos de Saúde</h2>
+            <div class="noticias__corpo col-12 col-md-6">
+                <h2 class="noticias__link"><a href="">Projeto obriga planos de saúde a cobrir exames e procedimentos
+                        fora do rol da ANS</a><br>
+                <span class="noticias__author text-muted">Rede Brasil Atual</span></h2>
+                <p class="noticias__chamada">Pelo projeto de lei, rol da ANS deixa de ser taxativo e vira apenas
+                    referência básica de procedimentos para planos de saúde.<br>
+                    (16/07/2022)
+                </p>
+            </div>
+            <div class="noticias__corpo col-12 col-md-6">
+                <h2 class="noticias__link"><a href="">Saiba como consultar lista de procedimentos cobertos pelo plano de
+                        saúde</a><br><span class="noticias__author text-muted">ISTO É DINHEIRO</span></h2>
+                <p class="noticias__chamada">...o Supremo Tribunal de Justiça mudou o entendimento sobre o rol de
+                    procedimentos listados pela ANS para a cobertura dos planos de saúde.<br>
+                    (16/07/2022)
+                </p>
+            </div>
+            <div class="noticias__corpo col-12 col-md-6">
+                <h2 class="noticias__link"><a href="">Como consultar os procedimentos cobertos pelos planos de 
+                    saúde</a><br><span class="noticias__author text-muted">Yahoo Finanças</span></h2>
+                <p class="noticias__chamada">Em setembro, serão ouvidos especialistas e representantes do governo e da
+                    sociedade sobre a cobertura obrigatória dos planos de saúde.<br>
+                    (14/07/2022)
+                </p>
+            </div>
+            <div class="noticias__corpo col-12 col-md-6">
+                <h2 class="noticias__link"><a href="">Planos de saúde: ANS aprova fim do limite do número de consultas
+                        com alguns tipos especialistas </a><br>
+                    <span class="noticias__author text-muted">Youtube</span></h2>
+                <p class="noticias__chamada">ANS aprova fim do limite do número de consultas com alguns tipos
+                    especialistas.<br>
+                    (13/07/2022)
+                </p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center my-4">
+            <a href="" class="noticias__anteriores">Notícias Anteriores</a>
+        </div>
+        <p class="text-center noticias__slogan">Contratar ou trocar o plano de saúde <br>é um momento delicado, <br>não se arrisque!</p>
+        <p class="text-center">Temos orgulho de estar a mais de 10 anos no mercado com uma equipe de profissionais 
+        que são treinados e atuallizados constantemente com o que está acontecendo no mercado de planos de saúde.</p>
+    </section>
+    <section class="botoes container">
+        <a href="" class="btn__botoes d-flex align-items-center justify-content-center"><i
+                class="bi bi-file-earmark-text px-2 btn__img"></i>Contrate<br>Online</a>
+        <a href="" class="btn__botoes d-flex align-items-center justify-content-center"><i
+                class="bi bi-calculator px-2 btn__img"></i>Simulação<br>Online</a>
+        <a href="" class="btn__botoes d-flex align-items-center justify-content-center"><i
+                class="bi bi-whatsapp px-2 btn__img"></i>Converse<br>WhatsApp</a>
+    </section>
+        <footer class="rodape p-5">
+            <img src="./img/logoAstroSaudeAzul.png" alt="Logo Astro Saúde" title="Astro Saúde">
+            <p class="pt-3"><i class="bi bi-telephone"></i> (12) 3307-5375</p>
+            <p><i class="bi bi-envelope"></i> comercial@astrosaude.com.br</p>
+            <section class="botoes container">
+                <a href="" class="noticias__anteriores mx-2 d-flex align-items-center justify-content-center"><i
+                        class="bi bi-file-earmark-text px-2 btn__img"></i>Chat<br>Online</a>
+                <a href="" class="noticias__anteriores mx-2 d-flex align-items-center justify-content-center"><i
+                        class="bi bi-calculator px-2 btn__img"></i>Simulação<br>Online</a>
+                <a href="" class="noticias__anteriores mx-2 d-flex align-items-center justify-content-center"><i
+                        class="bi bi-whatsapp px-2 btn__img"></i>Converse<br>WhatsApp</a>
+            </section>
+            
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script data-require="jquery" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
