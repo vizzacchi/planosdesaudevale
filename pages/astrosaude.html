@@ -10,7 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/styleOperadoras.css">
+    <link rel="stylesheet" href="../css/styleAstro.css">
     <title>Astro Saúde | Planos de Saúde</title>
 </head>
 
@@ -21,17 +21,16 @@
                 <i class="bi bi-chevron-compact-left navegacao__voltar ms-3"></i>
             </a>
             <img src="../../img/logoAstroSaudeAzul.png" alt="Logo Plano Astro Saúde" title="Logo Astro Saúde"
-                class="navegacao__img"><br>
+                class="navegacao__img">
             <p class="navegacao__texto"><a
                     href="https://api.whatsapp.com/send?phone=551233075375&text=Contato%20do%20site%20www.planosdesaudesjc.com.br"
                     target="_blank" class="navegacao__link"><i class="bi bi-whatsapp mx-1"></i> (12) 3307-5375</a>
                 <a href="mailto:comercial@astrosaude.com.br" target="_blank" class="navegacao__link">
                     <i class="bi bi-envelope mx-1"></i>comercial@astrosaude.com.br
             </p></a>
-
         </nav>
     </header>
-    <main class="container-fluid">
+    <main class="container-fluid conteudo">
         <section class="plano">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
@@ -40,13 +39,18 @@
             <div class="pilon">
                 <h1 class="pilon__title">Astro Saúde</h1>
                 <p>A sua melhor opção em planos de saúde</p>
-                <div class="row m-5">
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <p class="pilon__text">Uma corretora especializada em planos de saúde, que garante que os clientes tenham o poder de escolher o
+                <div class="pilon__historia">
+                    <div class="pilon__historia__text">
+                        <p class="pilon__text">Uma corretora especializada em planos de saúde, que garante que os
+                            clientes tenham o poder de escolher o
                             plano de saúde que melhor atenda suas necessidades.
                         </p>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="pilon__historia__img">
+                        <img src="../img/logoAstroVerdeClaro.webp" alt="Logo Astro Saúde em verde"
+                            title="Logo Astro Saúde em Verde" class="pilon__historia__imagem">
+                    </div>
+                    <div class="pilon__historia__text">
                         <ul>
                             <li>No mercado desde 2012</li>
                             <li>Profissionais especializados em planos de saúde</li>
@@ -58,58 +62,82 @@
                     </div>
                 </div>
             </div>
-            <div class="pilon__mkt">
-                <div class="pilon__valores">
-                    <h2>São Valores que fundamentam nossa empresa</h2>
-                    <div class="pilon__valores__itens">
-                        <ul>
-                            <li>Honestidade</li>
-                            <li>Integridade</li>
-                            <li>Ética</li>
-                            <li>Transparência</li>
-                            <li>Organização</li>
-                        </ul>
+            <h2 class="pilon__sub__title">São valores que fundamentam nossa empresa</h2>
+            <div class="pilon__valores clearfix">
+                <div class="pilon__valores__itens">
+                    <div class="pilon__valores__itens__img">
+                        <img src="../img/maos.svg" alt="Mãos se comprimentando" title="Mãos se comprimentando"
+                            class="pilon__valores__itens__imagem">
                     </div>
-                    <div class="pilon__valores__itens">
-                        <ul>
-                            <li>Seriedade</li>
-                            <li>Comprometimento</li>
-                            <li>Valorização Humana/li>
-                            <li>Responsabilidade</li>
-                            <li>Superação de Resultados</li>
-                        </ul>
+                    <div class="pilon__valores__itens__text row">
+                        <div class="col-6">
+                            <ul>
+                                <li>Honestidade</li>
+                                <li>Integridade</li>
+                                <li>Ética</li>
+                                <li>Transparência</li>
+                                <li>Organização</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Seriedade</li>
+                                <li>Comprometimento</li>
+                                <li>Valorização Humana</li>
+                                <li>Responsabilidade</li>
+                                <li>Superação de Resultados</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="pilon__missao">
-                    <h2>Missão</h2>
+            </div>
+            <div class="pilon__missao clearfix">
+                <h2 class="pilon__sub__title">Missão</h2>
+                <div class="pilon__missao__img">
+                    <img src="../img/alvo.svg" alt="Alvo com foco no objetivo" title="Alvo com foco no objetivo"
+                        class="pilon__missao__imagem">
+                </div>
+                <div class="pilon__missao__text">
                     <p>Oferecer o melhor custo/benefício aos clientes na contratação e gestão do seu plano de saúde,
                         garantindo o melhor atendimento do pré ao pós venda</p>
                 </div>
-                <div class="pilon__visao">
-                    <h2>Visão</h2>
+            </div>
+            <div class="pilon__missao clearfix">
+                <h2 class="pilon__sub__title">Visão</h2>
+                <div class="pilon__visao__img">
+                    <img src="../img/olho.svg" alt="Olho representando a visão da Astro Saúde"
+                        title="Olho representando a visão da Astro Saúde" class="pilon__visao__imagem">
+                </div>
+                <div class="pilon__visao__text">
                     <p>Ser uma empresa de referência, reconhecida como a melhor opção em gestão de planos de saúde e
                         seguros saúde no Vale do Paraíba e litoral norte.</p>
                 </div>
-                <div class="pilon__equipe">
-                    <h2>Conheça nossa equipe</h2>
-                </div>
-                <div class="pilon__escritorio">
-                    <h2>Conheça nosso escritório</h2>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!4v1564424447114!6m8!1m7!1sCAoSLEFGMVFpcFBkZ1kwc0l3SllDV2t3TnBCcENGLVNwZ1l4QWxqYkNOcEp3Y0Nr!2m2!1d-23.192173172927!2d-45.886029133764!3f348.81767578827527!4f-10.22899376180743!5f0.4000000000000002"
-                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="pilon__clientes">
-                    <h2>Veja alguns clientes</h2>
+            </div>
+            <div class="pilon__missao">
+                <h2 class="pilon__sub__title">Conheça nossa equipe</h2>
+            </div>
+            <div class="pilon__missao text-center">
+                <h2 class="pilon__sub__title">Conheça nosso escritório</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1564424447114!6m8!1m7!1sCAoSLEFGMVFpcFBkZ1kwc0l3SllDV2t3TnBCcENGLVNwZ1l4QWxqYkNOcEp3Y0Nr!2m2!1d-23.192173172927!2d-45.886029133764!3f348.81767578827527!4f-10.22899376180743!5f0.4000000000000002"
+                    frameborder="0" style="border:0" allowfullscreen class="escritorio">
+                </iframe>
+            </div>
+            <div class="pilon__clientes">
+                <h2 class="pilon__sub__title">Veja alguns de nossos clientes</h2>
+                <div class="clientes">
+
                 </div>
             </div>
         </section>
     </main>
     <footer class="rodape p-5">
         <img src="../../img/logoAstroSaudeAzul.png" alt="Logo Astro Saúde" title="Astro Saúde" width="200px">
-        <p class="pt-3"><i class="bi bi-telephone"></i> (12) 3307-5375</p>
-        <p><i class="bi bi-envelope"></i> comercial@astrosaude.com.br</p>
+        <p class="pt-3"><a
+                href="https://api.whatsapp.com/send?phone=551233075375&text=Contato%20do%20site%20www.planosdesaudesjc.com.br"
+                target="_blank" class="navegacao__link"><i class="bi bi-whatsapp mx-1"></i> (12) 3307-5375</a></p>
+        <p><a href="mailto:comercial@astrosaude.com.br" class="navegacao__link" target="_blank"><i
+                    class="bi bi-envelope"></i> comercial@astrosaude.com.br</a></p>
         <section class="botoes container">
             <a href="" class="noticias__anteriores mx-2 d-flex align-items-center justify-content-center"><i
                     class="bi bi-file-earmark-text px-2 btn__img"></i>Chat<br>Online</a>

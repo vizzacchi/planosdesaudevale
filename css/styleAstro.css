@@ -1,0 +1,332 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1d3b53;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #151616;
+}
+
+.navegacao {
+    position: absolute;
+    width: 100%;
+    height: 6rem;
+    left: 0px;
+    top: 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(90deg, #C2DED1 -13.75%, rgba(194, 197, 222, 0) 76.25%), #F1E0AC;
+    text-align: center;
+}
+
+.navegacao__img {
+    height: 4rem;
+    margin-left: auto;
+}
+
+.navegacao__voltar {
+    font-weight: 900;
+    font-size: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.navegacao__texto {
+    color: #151616;
+    font-size: 0.8rem;
+}
+
+.navegacao__link:hover,
+:focus {
+    font-size: 1.2rem;
+    color: #1d3b53;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.breadcrumb {
+    margin-top: 7rem;
+}
+
+.breadcrumb-item a {
+    color: #fff;
+}
+
+.pilon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pilon__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 120%;
+    color: #c2ded1;
+    margin-top: 2.2rem;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+}
+.pilon__sub__title {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 2rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.pilon__historia {
+    margin: 2rem auto 2rem auto;
+}
+.pilon__historia__img{
+    text-align: center;
+}
+.pilon__historia__imagem{
+    width: 70%;
+}
+.pilon__valores{
+    margin: 2rem auto 2rem auto;
+}
+.pilon__valores__itens__img{
+    text-align: center;
+}
+.pilon__valores__itens__imagem{
+    width: 70%;
+}
+.pilon__missao{
+    margin-bottom: 2rem;
+}
+.pilon__missao__img{
+    text-align: center;
+}
+.pilon__missao__imagem{
+    width: 40%;
+    margin-bottom: 2rem;
+}
+.pilon__visao__img{
+    text-align: center;
+}
+.pilon__visao__imagem{
+    width: 50%;
+}
+.escritorio{
+    width:90%;
+    height: 20rem;
+}
+.rodape {
+    width: 100%;
+    color: #151616;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #C2DED1;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.noticias__anteriores {
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #1d3b53;
+    width: 30%;
+}
+
+@media (min-width:500px) and (max-width:600px) {
+    .pilon__historia__img {
+        width: 40%;
+        float: right;
+        text-align: center;
+        }
+    .pilon__historia__text {
+        width: 60%;
+        float: left;
+    }
+    .pilon__valores__itens__img{
+        width: 40%;
+        float: left;
+    }
+    .pilon__valores__itens__imagem {
+        width: 70%;
+    }
+    .pilon__valores__itens__text{
+        width: 60%;
+        float: right;
+    }
+    .pilon__missao__img{
+        width: 40%;
+        float: right;
+    }
+    .pilon__missao__text{
+        width: 40%;
+        float: left;
+        margin-left: 3rem;
+    }
+    .pilon__visao__img{
+        width: 40%;
+        float: left;
+    }
+    .pilon__visao__imagem{
+        width:40%;
+    }
+    .pilon__visao__text{
+        width: 60%;
+        float: right;
+    }
+    .escritorio {
+        width: 80%;
+        height: 20rem;
+    }
+}
+
+@media (min-width:600px) and (max-width:800px){
+    html {
+        font-size: 14px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo {
+        width: 90%;
+    }
+    .pilon__historia__img {
+        width: 40%;
+        float:right;
+        text-align: center;
+    }
+    .pilon__historia__text {
+        width: 60%;
+        float: left;
+    }
+    .pilon__valores__itens__img {
+        width: 50%;
+        float: left;
+    }
+    .pilon__valores__itens__imagem{
+        width: 60%;
+    }
+    .pilon__valores__itens__text {
+        width: 50%;
+        float: right;
+    }
+    .pilon__missao__img {
+        width: 40%;
+        float: right;
+    }
+
+    .pilon__missao__text {
+        width: 50%;
+        float: left;
+        margin-left: 2rem;
+    }
+    .pilon__visao__img {
+        width: 40%;
+        float: left;
+    }
+    .pilon__visao__imagem {
+        width: 40%;
+    }
+    .pilon__visao__text {
+        width: 60%;
+        float: right;
+    }
+    .escritorio {
+        width: 80%;
+        height: 20rem;
+    }
+}
+
+@media (min-width:800px){
+    html {
+        font-size: 16px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo{
+        width: 80%;
+    }
+    .pilon__historia{
+        width: 80%;
+    }
+    .pilon__historia__img {
+        width: 40%;
+        float: right;
+        text-align: center;
+    }
+    .pilon__historia__text {
+        width: 50%;
+        float: left;
+    }
+    .pilon__valores__itens__img {
+        width: 30%;
+        float: left;
+    }
+    .pilon__valores__itens__imagem {
+        width: 60%;
+    }
+    .pilon__valores__itens__text {
+        width: 70%;
+        float: right;
+    }
+    .pilon__missao__img {
+        width: 40%;
+        float: right;
+    }
+    .pilon__missao_imagem{
+        width: 50%;
+    }
+    .pilon__missao__text {
+        width: 40%;
+        float: left;
+        margin-left: 3rem;
+    }
+    .pilon__visao__img {
+        width: 40%;
+        float: left;
+    }
+
+    .pilon__visao__imagem {
+        width: 40%;
+    }
+    .pilon__visao__text {
+        width: 60%;
+        float: right;
+        padding-right: 3rem;
+    }
+    .escritorio {
+        width: 80%;
+        height: 25rem;
+    }
+}

@@ -21,48 +21,35 @@ a {
 .navegacao {
     position: absolute;
     width: 100%;
-    height:6rem;
+    height: 4rem;
     left: 0px;
     top: 0px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: linear-gradient(90deg, #C2DED1 -13.75%, rgba(194, 197, 222, 0) 76.25%), #F1E0AC;
     text-align: center;
 }
+
 .navegacao__img {
-    height: 4rem;
+    height: 100%;
     margin-left: auto;
 }
+
 .navegacao__voltar {
     font-weight: 900;
-    font-size: 2rem;
     position: absolute;
-    left: 1rem; 
+    left: 1rem;
     top: 1rem;
 }
-.navegacao__texto{
-    color: #151616;
-}
-.navegacao__link:hover,:focus{
-    font-size: 1.2rem;
-    color: #1d3b53;
-    font-weight: 700;
-    transition: 0.5s;
-}
+
 .breadcrumb {
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 .breadcrumb-item a {
     color: #fff;
 }
-.pilon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.pilon__title {
+.plano__title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -70,11 +57,92 @@ a {
     line-height: 120%;
     color: #c2ded1;
     margin-top: 2.2rem;
-    margin-bottom: 0;
+    margin-bottom: 2.2rem;
     letter-spacing: 3px;
 }
-.pilon__text{
-    margin: 2rem auto;
+.plano__desc {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.plano__text {
+    width: 55%;
+}
+
+.plano__logo {
+    width: 45%;
+    margin-right: 0px;
+    text-align: end;
+}
+
+.plano__img {
+    position: relative;
+    right: -1rem;
+}
+.subtit{
+    text-align: center;
+    font-size: 1.8rem;
+
+}
+.recurso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.recurso__hospital{
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recurso__mao{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.recursos__mao__div{
+    width:45%;
+    margin-top: 2rem;
+    text-align: center;
+}
+.recurso__text{
+    margin-top: 0.6rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.botoes__operadoras{
+    background-color: #c2ded1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2rem 3rem 2rem;
+}
+.botoes__oper{
+    height: 4rem;
+    width:80%;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nao_cliente{
+    background-color: #3F9DD7;
+}
+.planos{
+    background: rgba(63, 157, 215, 0.8);
+}
+.hosp{
+    background: rgba(63, 157, 215, 0.4);
+}
+.lab{
+    background: rgba(63, 157, 215, 0.2);
 }
 .rodape {
     display: flex;
