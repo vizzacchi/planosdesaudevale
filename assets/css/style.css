@@ -1,0 +1,277 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+:root {
+  --background-body: #F4F0FF;
+  --background-container: #FFF;
+  --color-default: #1E3B54;
+  --section-color: #151515;
+  --footer-color-text: #FFF;
+  --navbar-color: #FFF;
+  --navbar-color-scrolled: rgba(255, 255, 255, 0.6);
+  --border-color: #EBEBEB;
+  --border-radius: 8px;
+  --box-shadow: 0 0 2rem 0 rgb(41 48 66 / 10%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-body);
+  overflow-x: hidden
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .3s ease
+}
+::selection {
+  color: #FFF;
+  background-color: var(--color-default)
+}
+textarea {
+  resize: none
+}
+
+/*---- =======================
+NAVBAR START ----*/
+nav.navbar {
+  min-height: 5rem;
+  background-color: var(--navbar-color);
+  transition: .3s
+}
+nav.navbar.scrolled {
+  background-color: var(--navbar-color-scrolled);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(15px);
+}
+nav.navbar > .container > .navbar-brand {
+  margin-right: 1.5rem
+}
+nav.navbar > .container > .navbar-brand > img {
+  width: 10rem
+}
+nav.navbar > .container > .navbar-collapse > .navbar-nav > li > .nav-link {
+  text-transform: uppercase;
+  transition: .3s
+}
+nav.navbar > .container > .navbar-collapse > .navbar-nav > li > .nav-link:hover {
+  color: var(--color-default);
+  font-weight: bold;
+}
+nav.navbar > .container > .navbar-collapse > .btn-dark-mode {
+  width: 3rem;
+  height: 3rem;
+  background-color: #E5E7E9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  transition: .3s
+}
+/*---- =======================
+NAVBAR END ------*/
+
+/*---- =======================
+MAIN START ------*/
+main {
+  width: 100%;
+  padding: 5rem 0 0 0
+}
+/*---- =======================
+MAIN END --------*/
+
+/*---- =======================
+SECTION START ---*/
+section.section-title {
+  margin: 2rem 0
+}
+section.section-title > .container > h2 {
+  margin-bottom: .6rem;
+  color: var(--section-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase
+}
+section.section-title > .container > h2::after {
+  content: "";
+  width: 7.5rem;
+  height: .2rem;
+  margin: .25rem .625rem;
+  display: inline-block;
+  background: #ffde9e
+}
+section.section-title > p {
+  margin: 0;
+  margin: 0;
+  color: var(--section-color);
+  font-size: 1rem
+}
+section.section-bg-img,
+section.section-bg-img > .section-bg-img-overlay {
+  width: 100%;
+  height: calc(80vh - 5rem)
+}
+section.section-bg-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: url(../images/home/principal.jpg) top center;
+  background-size: cover
+}
+section.section-bg-img > .section-bg-img-overlay {
+  position: absolute;
+  background: linear-gradient(135deg, rgba(61, 64, 91, 0.4) 0%, rgba(61, 64, 91, 0.95) 100%)
+}
+section.section-bg-img > .container {
+  z-index: 10
+}
+section.section-bg-img > .container > .section-info {
+  width: 50vw
+}
+section.section-bg-img > .container > .section-info > h1 {
+  margin-bottom: 2rem;
+  color: #FFF;
+  font-size: 2rem
+}
+/*---- =======================
+SECTION END -----*/
+
+/*---- =======================
+CONTATO START ---*/
+article > .contato > .container > iframe {
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 2.5rem;
+  border: 0;
+  border-radius: .25rem
+}
+article > .contato > .container .info i {
+  width: 2.8rem;
+  height: 2.8rem;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background: #FFCB81;
+  color: #151515;
+  border-radius: 50%
+}
+article > .contato > .container .info h4 {
+  margin-bottom: 0;
+  margin-left: 60px;
+  color: #151515;
+  font-size: 22px;
+  font-weight: 600
+}
+article > .contato > .container .info p {
+  margin-bottom: 0;
+  margin-left: 60px;
+  font-size: 14px;
+  color: #484848;
+}
+/*---- =======================
+CONTATO END -----*/
+
+/*---- =======================
+SOBRE START -----*/
+article > .sobre > .container {
+  display: flex;
+  justify-content: space-between
+}
+article > .sobre > .container img {
+  width: 18vw;
+}
+/*---- =======================
+SOBRE END -------*/
+
+/*---- =======================
+FOOTER START ----*/
+footer > .footer-info {
+  padding: 2rem 0 1rem 0;
+  background-color: var(--color-default)
+}
+footer > .footer-info > .container > p {
+  color: var(--footer-color-text)
+}
+footer > .footer-info > .container > p > i {
+  margin-right: 1rem
+}
+footer > .footer-copyright {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #032030
+}
+footer > .footer-copyright > .container > p {
+  margin-bottom: 0;
+  color: var(--footer-color-text)
+}
+/*---- =======================
+FOOTER END ------*/
+
+/*---- =======================
+BTN BLUE START --*/
+.btn-blue {
+	--bs-btn-color: #FFF;
+	--bs-btn-bg: var(--color-default);
+	--bs-btn-border-color: var(--color-default);
+	--bs-btn-hover-color: #FFF;
+	--bs-btn-hover-bg: #00324c;
+	--bs-btn-hover-border-color: var(--color-default);
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #FFF;
+	--bs-btn-active-bg: var(--color-default);
+	--bs-btn-active-border-color: var(--color-default);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #FFF;
+	--bs-btn-disabled-bg: var(--color-default);
+	--bs-btn-disabled-border-color: var(--color-default)
+}
+/*---- =======================
+BTN BLUE END ----*/
+
+/*---- =======================
+LIST START ------*/
+.list-group > .list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.list-group > .list-group-item > img {
+  width: 10rem;
+  margin-right: 2rem
+}
+/*---- =======================
+LIST END --------*/
+
+/*---- =======================
+CARD BOX START --*/
+.card-box {
+  padding: 10px;
+  margin-bottom: 1.4rem;
+  background: #FFF;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius)
+}
+.card-box .icon {
+  width: 180px;
+  height: 64px;
+  margin: 0 auto 40px auto;
+  border-radius: var(--border-radius)
+}
+.card-box h4 {
+  font-size: 24px;
+  font-weight: 700
+}
+.card-box p {
+  font-size: 15px;
+  line-height: 24px
+}
+/*---- =======================
+CARD BOX END ----*/

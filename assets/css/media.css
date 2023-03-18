@@ -1,0 +1,33 @@
+/**** =======================
+@MEDIA 768px START ****/
+@media only screen and (max-width: 768px) {
+
+    /*---- =======================
+    SECTION START ---*/
+    section.section-bg-img > .container > .section-info {
+        width: 100%
+    }
+    section.section-bg-img > .container > .section-info-img > img {
+        display: none
+    }
+    /*---- =======================
+    SECTION END -----*/
+
+    /*---- =======================
+    SOBRE START -----*/
+    article > .sobre > .container {
+        flex-direction: column
+    }
+    /*---- =======================
+    SOBRE END -------*/
+
+    /*---- =======================
+    LIST START ------*/
+    .list-group > .list-group-item {
+        flex-direction: column
+    }
+    /*---- =======================
+    LIST END --------*/
+}
+/**** =======================
+@media 768px END ******/
